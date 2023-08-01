@@ -1,0 +1,10 @@
+<div class="results-container">
+    <p-virtualScroller #vs [value]="virtualResults" scrollHeight="450px" [itemSize]="80" [lazy]="true"
+        (onLazyLoad)="loadResultsLazy($event)">
+        <ng-template let-result pTemplate="item">
+            <div class="item-container">
+                {{ result }}
+            </div>
+        </ng-template>
+    </p-virtualScroller>
+</div>

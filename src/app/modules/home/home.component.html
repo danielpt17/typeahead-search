@@ -1,0 +1,8 @@
+<div class="container">
+  <h3>
+    Pick a category, and brace yourself for an epic collection of Chuck Norris jokes that'll crack you up!
+  </h3>
+  <app-typeahead-search [suggestions]="suggestions$ | async" (searchResults)="onSearchResults($event)" (searchQuery)="onSearchQuery($event)"></app-typeahead-search>
+  <app-results [results]="results$ | async"></app-results>
+</div>
+

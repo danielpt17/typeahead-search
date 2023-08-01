@@ -1,0 +1,9 @@
+<div class="search-container">
+    <p-autoComplete [(ngModel)]="searchTerm"
+    (completeMethod)="filterSuggestions($event)"
+   [suggestions]="filteredSuggestions || []"
+   (onKeyUp)="search($event)"
+   (onSelect)="select($event)"
+   placeholder="Search...">
+</p-autoComplete>
+</div>
